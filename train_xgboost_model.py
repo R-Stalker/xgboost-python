@@ -31,7 +31,7 @@ if __name__ == '__main__':
     evals_result = {}
     bst = xgb.train(param, train_data, num_round, watchlist, evals_result=evals_result)
 
-    bst.save_model("test_model")
+    bst.save_model("output_file\\test_model")
 
     print('Access logloss metric directly from evals_result:')
     print(evals_result['eval']['logloss'])

@@ -38,6 +38,6 @@ def libsvm_to_dense(libsvm_file_input_path, dense_file_output_path, label_output
 if __name__ == '__main__':
     # libsvm_file_input_path = 'train_data'
     libsvm_file_input_path = 'pre_data'
-    dense_file_output_path = 'dense.features'
-    label_output_path = 'dense.labels'
+    dense_file_output_path = 'output_file\\dense.features'
+    label_output_path = 'output_file\\dense.labels'
     libsvm_to_dense(libsvm_file_input_path, dense_file_output_path, label_output_path)

@@ -133,7 +133,7 @@ if __name__ == '__main__':
     threshold = 0.5
     test_model_p = 'model\\LocalFile'
     test_data_p = 'pre_data\\part-00000'
-    feature_map_p = 'feature_map.txt'
+    feature_map_p = 'output_file\\feature_map.txt'
 
     test_model = my_util.load_model(test_model_p)
     test_data = my_util.load_libsvm_data(test_data_p)

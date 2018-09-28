@@ -3,7 +3,7 @@ import my_util
 
 if __name__ == '__main__':
     tesla_model_path = 'model\\LocalFile'
-    predict_data_path = 'predict.result'
+    predict_data_path = 'output_file\\predict.result'
 
     # load model
     my_model = my_util.load_model(tesla_model_path)
