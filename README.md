@@ -11,7 +11,7 @@
 2.[python代码文件简介]
 =============
 
-**所有有关路径设置的全部都在main中或者配置文件中，可以根据自身需求更改路径
+所有有关路径设置的全部都在main中或者配置文件中，可以根据自身需求更改路径
 
 train_xgboost_model.py —— xgboost模型训练
 
@@ -39,9 +39,9 @@ pre_data —— 存放用于预测的数据，数据格式为libsvm
 4.[其他文件]
 ===============
 
-dense.features —— 通过libsvm2dense.py脚本将train_data或pre_data里的libsvm格式数据转化为dense格式，该文件存储特征
+dense.features —— 通过libsvm2dense.py脚本将train_data或pre_data里的libsvm格式数据转化为dense格式，用于存储特征
 
-dense.label ——  同上，该文件存label列
+dense.label ——  同上，用于存储label列
 
 predict.result —— 模型预测后产生的预测值存放在这个文件中，是predict_xgboost.py产生的文件
 
