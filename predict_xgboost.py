@@ -9,7 +9,7 @@ if __name__ == '__main__':
     my_model = my_util.load_model(tesla_model_path)
 
     # load data for predict
-    test_data = my_util.load_dense_data('dense.features', 'dense.labels')
+    test_data = my_util.load_dense_data('output_file\\dense.features', 'output_file\\dense.labels')
     # test_data = my_util.load_libsvm_data('pre_data')
 
     # predict

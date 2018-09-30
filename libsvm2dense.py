@@ -21,13 +21,14 @@ def libsvm_to_dense(libsvm_file_input_path, dense_file_output_path, label_output
     dense_data_list = list()
     label_list = list()
     if os.path.isfile(libsvm_file_input_path):
+        print("just a file")
         handle_one_file(libsvm_file_input_path, dense_data_list, label_list)
     elif os.path.isdir(libsvm_file_input_path):
         libsvm_file_list = os.listdir(libsvm_file_input_path)
+        print("files in dir:", libsvm_file_list)
         for i in range(0, len(libsvm_file_list)):
             one_file_path = os.path.join(libsvm_file_input_path, libsvm_file_list[i])
             handle_one_file(one_file_path, dense_data_list, label_list)
-
     with open(dense_file_output_path, 'w') as dense_result:
         for features in dense_data_list:
             dense_result.write(' '.join(features) + '\n')
